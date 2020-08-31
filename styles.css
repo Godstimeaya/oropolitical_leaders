@@ -1,13 +1,13 @@
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
+@media screen and (max-width: 600px) {
+    #primary { width:60%; }
+    #secondary { width:50%; margin:0; border:none; }
 img { max-width: 100%; height: auto; }}
 
 html, body {
@@ -108,13 +108,6 @@ hr {
     width: 50px;
     height: 2px;
     background-color: #DD4E40;
-}
-
-.brand hr {
-    width: 20%;
-    min-width: 185px;
-    max-width: 300px;
-    margin-top: -10px;
 }
 
 h1 {
