@@ -1,13 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 600px) {
-    #primary { width:60%; }
-    #secondary { width:50%; margin:0; border:none; }
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
 img { max-width: 100%; height: auto; }}
 
 html, body {
