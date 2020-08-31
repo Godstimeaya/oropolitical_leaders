@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-@media only screen and (max-width: 1000px) {
-    .img-circle, .devices {
-        display: none;
-    }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 600px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
-
 html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif !important;
