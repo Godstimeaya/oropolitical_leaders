@@ -265,8 +265,8 @@ label {
 /* Hover effect on portfolio images */
 
 .hovereffect {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     float: left;
     overflow: hidden;
     position: relative;
