@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 600px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+@media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
 }
 
-/* Media Queries: Tabled Portrait */
+} /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
