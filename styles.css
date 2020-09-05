@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 600px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+element {
+    width: 500px;
+    height: 400px;
+}
+
 body {
     height: 50%;
     font-family: 'Open Sans', sans-serif !important;
@@ -6,6 +24,7 @@ body {
 
 .navbar {
     border: 0;
+    z-index: 9999;
     letter-spacing: 4px;
     text-shadow: 1px 1px 1px #000;
 }
@@ -31,10 +50,6 @@ body {
     background-color: #DD4E40 !important;
 }
 
-/* This will be active when the scrollTop == 0 */
-.navbar-invis {
-    background-color: rgba(0, 0, 0, 0);
-}
 
 .container-fluid {
     padding: 35px !important;
@@ -61,33 +76,13 @@ body {
     text-align: center;
 }
 
-/* Hamburger menu button */
-.glyphicon-menu-hamburger {
-    font-size: 22px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    padding: 10px;
-    padding-top: 12px;
-    color: #FFFFFF;
-}
-
-.devices {
-    text-align: center;
-    margin-top: 60px;
-    width: 50%;
-}
-
-/* Hides the image at first to get a better looking slide-in effect */
-.hideImage {
-    visibility: hidden;
-}
-
 hr {
     border: 0;
     width: 50px;
     height: 2px;
     background-color: #DD4E40;
 }
+
 
 h1 {
     text-shadow: 1px 2px 3px #000;
@@ -116,10 +111,13 @@ h1 {
 }
 
 #footer {
-    background-color: green;
+    background-color: #242B35;
     background-size: cover;
     margin-top: 100px;
-    padding: 35px;
+    padding: 35px !important;
+    -webkit-box-shadow: inset 0px 10px 20px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 10px 20px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 10px 20px -9px rgba(0, 0, 0, 0.75);
     color: #FFFFFF;
 }
 
@@ -160,15 +158,19 @@ h1 {
     background: url("oro.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 500%;
     width: 800px;
     color:red;
     
 
 }
 
-h2, h1 {
-    font-family: 'Pacifico', cursive;
+.img {
+    border-radius: 50%;
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    border: 3px solid #242B35;
 }
 
 .overlay h2 {
@@ -179,10 +181,6 @@ p {
     font-size: 18px;
 }
 
-a {
-    color: #205493;
-    font-weight: bold;
-}
 
 a:hover, a:active a:visited {
     color: #DD4E40;
@@ -193,17 +191,6 @@ a:hover, a:active a:visited {
     background-color: rgb(242, 242, 242);
 }
 
-.col-xs-12 {
-    padding: 3px;
-}
-
-.col-md-3 {
-    padding: 10px;
-}
-
-.portfolioImg {
-    height: 230px;
-}
 
 label {
     font-size: 15px;
@@ -214,9 +201,9 @@ label {
 /* Hover effect on portfolio images */
 
 .hovereffect {
-    width: 50%;
+    width: 100%;
     height: 50%;
-    float: left;
+    float: center;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -225,26 +212,14 @@ label {
 }
 
 .hovereffect .overlay {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
     padding: 25px 20px;
     cursor: pointer;
-}
-
-.hovereffect img {
-    display: block;
-    position: relative;
-    max-width: none;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 .hovereffect:hover img {
@@ -301,3 +276,4 @@ label {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
