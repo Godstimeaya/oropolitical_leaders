@@ -15,6 +15,26 @@ body {
   justify-content: center;
   grid-area: header;
   background-color: green;
+  background: #59adeb;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  background-size: 350% 350%;
+  animation: waveColors 8s ease infinite;
+  /* End Wave Color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
 }
 
 #title {
